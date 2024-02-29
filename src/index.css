@@ -1,3 +1,58 @@
+@font-face {
+    font-family: 'Poppins Black';
+    font-style: normal;
+    src: url("./assets/Poppins/Poppins-Black.ttf");
+}
+
+@font-face {
+    font-family: 'Poppins Black';
+    font-style: italic;
+    src: url("./assets/Poppins/Poppins-BlackItalic.ttf");
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("./assets/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    src: url("./assets/Poppins/Poppins-Italic.ttf");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --main: #f06767;
+    --main-faint: #f08606;
+    --gray: #303030:
+    --white: white;
+}
+
+body {
+    font-family: "Poppins";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins Black";
+}
+
+header {
+    background-color: black;
+    color: var(--main);
+}
+
+#hero {
+    background-image: url('https://picsum.photos/seed/oiquwer234/2500/1000');
+    color: var(--main);
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+#hero > div {
+    padding: 50px;
+}
