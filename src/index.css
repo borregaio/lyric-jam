@@ -6,6 +6,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* General Styles */
+#root {
+    padding: 0;
+}
+
+/* Hero */
+.red-div {
+    height: 20rem;
+    width: 30rem;
+}
+
 /* Search Results */
 @media only screen and (max-width: 767px) {
     .album-cover {
