@@ -26,9 +26,9 @@ const SearchResults = ({ results }) => {
     <div>
       <ul role="list" className="bg-custom-gray text-white font-poppins">
         {songs.map((song) => (
-          <li className="flex items-center gap-x-6 p-7" key={song.name}>
+          <li className="lg:flex items-center gap-x-6 p-7" key={song.name}>
             <div className="w-full">
-              <img className="h-36 w-36 shadow-md shadow-black" src={song.cover} alt="" />
+              <img className="album-cover lg:h-36 w-36 shadow-md shadow-black md:inline mb-6" src={song.cover} alt="" />
             </div>
             <div className="w-full">
               <h4>{song.name}</h4>
@@ -40,13 +40,12 @@ const SearchResults = ({ results }) => {
               <h4>{song.year}</h4>
             </div>
             <div className="w-full">
-              <button className="text-custom-red border border-custom-red bg-transparent px-6 py-1">SELECT SONG</button>
+              <button className="select-song text-custom-red border border-custom-red bg-transparent px-6 py-1 md:mt-3">SELECT SONG</button>
             </div>
           </li>
         ))}
       </ul>
     </div>
-
   );
 };
 

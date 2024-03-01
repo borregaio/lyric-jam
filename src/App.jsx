@@ -1,12 +1,15 @@
 import React from 'react';
-import { useState } from 'react'
-import './App.css'
-import SearchResults from './SearchResults'
+import './App.css';
+import Hero from './Hero';
+import SearchResults from './SearchResults';
 
 function App() {
   return (
-    <SearchResults/>
-  )
+    <React.Fragment>
+      <Hero />
+      <SearchResults />
+    </React.Fragment>
+  );
 }
 
-export default App
+export default App;
