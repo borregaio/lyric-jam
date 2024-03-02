@@ -11,6 +11,7 @@ export default {
       },
       colors: {
         'custom-red': '#F06767',
+        'custom-pink': '#F08686',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
