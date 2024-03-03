@@ -16,6 +16,10 @@ export default {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
+      height: {
+        'headerHeight0' : '550px',
+        'headerHeight1' : '700px',
+      }
     },
   },
   plugins: [],
