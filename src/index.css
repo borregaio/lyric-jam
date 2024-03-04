@@ -6,39 +6,37 @@
 @tailwind components;
 @tailwind utilities;
 
-/* General Styles */
-#root {
-  padding: 0;
-}
-
 /* Hero */
-
 .red-div,
 .image-div {
-  height: 20rem;
-  width: 35rem;
-  position: absolute;
-}
-.red-div {
-  top: 30%;
-  left: 5%;
+  height: 16rem;
+  width: 31rem;
 }
 
-.image-div {
-  top: 40%;
-  left: 8%;
-}
-
-.lyrics {
-  padding-top: 130px;
-}
-
-/* Search Results */
 @media only screen and (max-width: 767px) {
+  /* Search Results */
   .album-cover {
     display: inline;
   }
   .select-song {
     margin-top: 12px;
   }
+}
+
+@media only screen and (max-width: 640px){
+    /* Hero */
+    .red-div,
+    .image-div {
+      height: 14rem;
+      width: 20rem;
+    }
+
+    .red-div {
+      margin-bottom: 80px;
+    }
+
+    .lyrics {
+      padding: 15px;
+      text-align: center;
+    }    
 }
