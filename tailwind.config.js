@@ -17,8 +17,8 @@ export default {
         poppins: ['Poppins', 'sans-serif'],
       },
       height: {
-        'headerHeight0' : '550px',
-        'headerHeight1' : '700px',
+        'height0' : '550px',
+        'height1' : '700px',
       }
     },
   },
