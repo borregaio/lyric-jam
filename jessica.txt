@@ -1,0 +1,9 @@
+git add .
+git commit -m "header, hero, and jotai store"
+git push origin layout
+
+In terms of web applications, STATE is any data that when changed, should automatically update the DOM.
+
+Jotai is a state-management library for react
+it's an alternative for useContext or redux
+it allows us to have global state that can be easily read or set from anywhere in the app
