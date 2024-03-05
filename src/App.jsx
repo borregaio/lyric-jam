@@ -1,8 +1,13 @@
+import React from 'react';
 import { useEffect, useState } from 'react'
-import './App.css'
-import SearchResults from './SearchResults'
 import { GetSearchResult } from './API/APICalls.js';
-
+import YouTubeEmbed from './Components/YouTubeEmbed';
+import './App.css';
+import Header from './Header';
+import Hero from './Hero';
+import About from './About';
+import SearchResults from './SearchResults';
+import Facts from './Facts';
 
 function App() {
   const[results, setResults] = useState([]);
@@ -16,9 +21,16 @@ function App() {
     loadResults(); 
   },
     []);
+  
   return (
-    <SearchResults results={results}/>
-  )
+    <React.Fragment>
+      <Header />
+      <Hero />
+      <SearchResults results={results}/>
+      <Facts />
+      <About />
+    </React.Fragment>
+  );
 }
 
-export default App
+export default App;

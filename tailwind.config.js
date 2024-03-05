@@ -11,10 +11,15 @@ export default {
       },
       colors: {
         'custom-red': '#F06767',
+        'custom-pink': '#F08686',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
+      height: {
+        'height0' : '550px',
+        'height1' : '700px',
+      }
     },
   },
   plugins: [],
