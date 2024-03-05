@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './Header';
 import Hero from './Hero';
+import About from './About';
 import SearchResults from './SearchResults';
 import Facts from './Facts';
 
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <SearchResults />
       <Facts />
+      <About />
     </React.Fragment>
   );
 }
