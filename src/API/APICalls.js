@@ -1,5 +1,4 @@
 export async function GetSearchResult(searchQuery) {
-    return;
     
     const url = `https://genius-song-lyrics1.p.rapidapi.com/search/?q=${searchQuery}&per_page=20&page=1`;
     const options = {
