@@ -1,4 +1,5 @@
 import React from 'react';
+import YouTubeEmbed from './Components/YouTubeEmbed';
 import './App.css';
 import Header from './Header';
 import Hero from './Hero';
