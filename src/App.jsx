@@ -1,14 +1,22 @@
 import React from 'react';
 import YouTubeEmbed from './Components/YouTubeEmbed';
+import './App.css';
+import Header from './Header';
+import Hero from './Hero';
+import About from './About';
+import SearchResults from './SearchResults';
+import Facts from './Facts';
 
-
-const App = () => {
+function App() {
   return (
-    <div className="app">
-      <h1>Embedded YouTube Video</h1>
-      <YouTubeEmbed videoId="VIDEO_ID_HERE" />
-    </div>
+    <React.Fragment>
+      <Header />
+      <Hero />
+      <SearchResults />
+      <Facts />
+      <About />
+    </React.Fragment>
   );
-};
+}
 
 export default App;
