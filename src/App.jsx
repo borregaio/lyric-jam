@@ -1,14 +1,14 @@
 import React from 'react';
 import { useEffect, useState } from 'react'
 import { GetSearchResult } from './API/APICalls.js';
-import YouTubeEmbed from './components/YouTubeEmbed';
+import YouTubeEmbed from './Components/YouTubeEmbed.jsx';
 import './App.css';
-import Header from './components/Header.jsx';
-import Hero from './components/Hero.jsx';
-import About from './components/About.jsx';
-import SearchResults from './components/SearchResults.jsx';
-import Facts from './components/Facts.jsx';
-import Footer from './components/Footer.jsx';
+import Header from './Components/Header.jsx';
+import Hero from './Components/Hero.jsx';
+import About from './Components/About.jsx';
+import SearchResults from './Components/SearchResults.jsx';
+import Facts from './Components/Facts.jsx';
+import Footer from './Components/Footer.jsx';
 
 function App() {
   const[results, setResults] = useState([]);
@@ -27,9 +27,9 @@ function App() {
     <React.Fragment>
       <Header />
       <Hero />
+      <YouTubeEmbed />
       <SearchResults results={results}/>
       <Facts />
-      <YouTubeEmbed/>
       <About />
       <Footer />
     </React.Fragment>
