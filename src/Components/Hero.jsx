@@ -3,7 +3,7 @@ import React from 'react';
 const Hero = () => {
     return (
         <div>
-            <div className='font-poppins text-4xl font-extrabold xl:text-left mt-5 xl:ml-12 lg:text-center md:text-center sm:text-center'>
+            <div className='selected-song font-poppins text-4xl font-extrabold xl:text-left mt-5 xl:ml-12 lg:text-center md:text-center sm:text-center'>
                 <h1>BEYONCE</h1>
                 <h2>TEXAS HOLD 'EM</h2>
             </div>
