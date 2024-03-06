@@ -4,7 +4,7 @@
 
 This project aims to create a music website for enthusiasts who want to enjoy lyrics and music videos simultaneously. The website offers a clean and intuitive user interface with a prominent search bar, allowing users to search for songs by artist. The search results are displayed in an organized manner, showcasing relevant songs and artists.
 
-![Screenshot](./assets/images/screenshot.png)
+![Screenshot](./src/assets/images/screenshot.png)
 
 ## Deployment
 

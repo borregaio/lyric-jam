@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import SearchButton from './SearchButton';
-import blackSmoke from './assets/images/02_black-smoke.png';
-import abstractLetters from './assets/images/02_abstract-letters.png';
+import blackSmoke from '../assets/images/02_black-smoke.png';
+import abstractLetters from '../assets/images/02_abstract-letters.png';
 
 
 const Header = () => {
@@ -11,7 +11,7 @@ const Header = () => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
-      }, []);
+    }, []);
 
     return (
         <div className='flex justify-center h-height0 sm:h-height1 relative'>
@@ -28,15 +28,15 @@ const Header = () => {
 
 
             {/* Background image two */}
-            <div data-aos="fade-left" 
-                data-aos-delay="100" 
-                data-aos-easing="ease-in-sine" 
+            <div data-aos="fade-left"
+                data-aos-delay="100"
+                data-aos-easing="ease-in-sine"
                 className='absolute top-24 sm:top-36 z-10 w-5/6 h-96'>
                 <img src={abstractLetters} className='w-full h-full object-cover shadow-lg shadow-black'></img>
             </div>
 
             {/* Container for instructions and search button */}
-            <div data-aos="fade-left" 
+            <div data-aos="fade-left"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
                 className='absolute top-32 sm:top-52 bg-black shadow-lg shadow-black w-3/4 h-96 z-20' >
