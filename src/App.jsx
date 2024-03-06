@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react'
 import { GetSearchResult } from './API/APICalls.js';
-import YouTubeEmbed from './components/YouTubeEmbed';
+import YouTubeEmbed from './Components/YouTubeEmbed.jsx';
 import './App.css';
 import Header from './components/Header.jsx';
 import Hero from './components/Hero.jsx';
@@ -29,6 +29,7 @@ function App() {
     <React.Fragment>
       <Header />
       <Hero />
+      <YouTubeEmbed />
       {showResults ? <SearchResults results={results}/> : <SearchButton searchShowResultsFunction={setShowResults} />}
       <Facts />
       <About />
