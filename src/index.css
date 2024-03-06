@@ -15,12 +15,12 @@
 
 @media only screen and (max-width: 767px) {
   /* Search Results */
-  .album-cover {
+  /* .album-cover {
     display: inline;
   }
   .select-song {
     margin-top: 12px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 640px){
@@ -35,8 +35,12 @@
       margin-bottom: 80px;
     }
 
+    .selected-song {
+      text-align: center;
+    }
+
     .lyrics {
       padding: 15px;
       text-align: center;
-    }    
+    }
 }

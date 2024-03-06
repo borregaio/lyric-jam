@@ -24,7 +24,7 @@ const Facts = () => {
                 </div>
                 {/* Facts about artist */}
                 <div
-                    data-aos="fade-left"
+                    data-aos="fade-up"
                     data-aos-delay="100"
                     data-aos-easing="ease-in-sine"
                     className='font-poppins p-2 lg:p-8 text-left bg-custom-red shadow-lg shadow-black h-40 lg:h-72 overflow-hidden hover:overflow-auto'>
