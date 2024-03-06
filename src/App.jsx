@@ -29,6 +29,7 @@ function App() {
       <Hero />
       <SearchResults results={results}/>
       <Facts />
+      <YouTubeEmbed/>
       <About />
       <Footer />
     </React.Fragment>
