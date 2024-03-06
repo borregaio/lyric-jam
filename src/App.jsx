@@ -1,7 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react'
 import { GetSearchResult } from './API/APICalls.js';
-import YouTubeEmbed from './components/YouTubeEmbed';
 import './App.css';
 import Header from './components/Header.jsx';
 import Hero from './components/Hero.jsx';
@@ -29,7 +28,6 @@ function App() {
       <Hero />
       <SearchResults results={results}/>
       <Facts />
-      <YouTubeEmbed/>
       <About />
       <Footer />
     </React.Fragment>

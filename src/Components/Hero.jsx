@@ -1,4 +1,5 @@
 import React from 'react';
+import YouTubeEmbed from './YouTubeEmbed';
 
 const Hero = () => {
     return (
@@ -11,7 +12,7 @@ const Hero = () => {
             <div className='grid xl:grid-cols-2 md:grid-cols-1 sm:grid-cols-1'>
                 <div>
                     <div className='red-div bg-custom-red shadow-md shadow-black relative mx-auto mt-10 md:mb-10'>
-                        <div className='image-div bg-black shadow-md shadow-black relative top-10 left-7'></div>
+                        <div className='image-div bg-black shadow-md shadow-black relative top-10 left-7'><YouTubeEmbed/></div>
                     </div>
                 </div>
                 <div className='lyrics xl:p-10 lg:p-10 md:p-10 text-left lg:text-center md:text-center sm:p-20 sm:text-center'>
