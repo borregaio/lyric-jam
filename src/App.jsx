@@ -8,9 +8,11 @@ import About from './components/About.jsx';
 import SearchResults from './components/SearchResults.jsx';
 import Facts from './components/Facts.jsx';
 import Footer from './components/Footer.jsx';
+import SearchButton from './components/SearchButton.jsx';
 
 function App() {
   const[results, setResults] = useState([]);
+  const[showResults, setShowResults] = useState(false);
   useEffect(() => {
 
     async function loadResults(){
@@ -26,7 +28,7 @@ function App() {
     <React.Fragment>
       <Header />
       <Hero />
-      <SearchResults results={results}/>
+      {showResults ? <SearchResults results={results}/> : <SearchButton searchShowResultsFunction={setShowResults} />}
       <Facts />
       <About />
       <Footer />
