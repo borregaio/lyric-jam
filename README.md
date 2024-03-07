@@ -8,7 +8,7 @@ This project aims to create a music website for enthusiasts who want to enjoy ly
 
 ## Deployment
 
-The deployed version can be accessed [here](https://master--lyricjam.netlify.app/).
+The deployed version can be accessed [here](https://lyricjam.netlify.app/).
 
 ## Tech Stack
 
