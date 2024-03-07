@@ -1,11 +1,10 @@
 export async function GetSearchResult(searchQuery) {
     
-    const api = `uODKK-hhq00en1ijK6sQrXwqsdmvOsyZnW4LV9EXv8WL90_H1kTa5mxBJAVZFaq5`;
     const url = `https://genius-song-lyrics1.p.rapidapi.com/search/?q=${searchQuery}&per_page=20&page=1`;
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': api,
+            'X-RapidAPI-Key': `923ca8d630msh4011bbe65fa9509p1cd530jsn5a01`,
             'X-RapidAPI-Host': 'genius-song-lyrics1.p.rapidapi.com'
         }
     };
