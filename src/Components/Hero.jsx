@@ -15,7 +15,11 @@ const Hero = () => {
                         <div className='image-div bg-black shadow-md shadow-black relative top-10 left-7'><YouTubeEmbed/></div>
                     </div>
                 </div>
-                <div className='lyrics xl:p-10 lg:p-10 md:p-10 text-left lg:text-center md:text-center sm:p-20 sm:text-center'>
+                                <div
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                    data-aos-easing="ease-in-sine"
+                    className='lyrics font-poppins xl: mt-10 xl:p-10 lg:p-10 md:p-10 text-left lg:text-center md:text-center sm:p-20 sm:text-center shadow-black h-40 lg:h-72 overflow-hidden hover:overflow-auto'>
                     <p>This ain't Texas (woo), ain't no hold 'em (hey)</p>
                     <p>So lay your cards down, down, down, down</p>
                     <p>So park your Lexus (woo) and throw your keys up (hey)</p>
