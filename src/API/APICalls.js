@@ -4,7 +4,7 @@ export async function GetSearchResult(searchQuery) {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': `923ca8d630msh4011bbe65fa9509p1cd530jsn5a01`,
+            'X-RapidAPI-Key': `24e6c754d8msh8f73c62b520cefcp12aca5jsn2b89a55fc745`,
             'X-RapidAPI-Host': 'genius-song-lyrics1.p.rapidapi.com'
         }
     };
