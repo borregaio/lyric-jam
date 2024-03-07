@@ -65,6 +65,166 @@ The website is designed to be responsive and compatible with various devices and
 
 ## Steps Followed
 
+### Create UI Components:
+Design and create UI components for the header, videp player, lyrics, search bar, search results, facts, about us and footer.
+```javascript
+function App() {
+  const[results, setResults] = useState([]);
+  const[showResults, setShowResults] = useState(false);
+  useEffect(() => {
+
+    async function loadResults(){
+      const res = await GetSearchResult("Beyonce")
+      setResults(res);
+    }
+
+    loadResults(); 
+  },
+    []);
+  
+  return (
+    <React.Fragment>
+      <Header />
+      <Hero />
+      {showResults ? <SearchResults results={results}/> : <SearchButton searchShowResultsFunction={setShowResults} />}
+      <Facts />
+      <About />
+      <Footer />
+    </React.Fragment>
+  );
+}
+
+export default App;
+```
+
+### Implement Search Functionality:
+Create functions to handle user input, make API requests to fetch song data, and display results.
+```javascript
+const SearchResults = ({ results }) => {
+  return (
+    <div>
+      {results &&
+        <ul role="list" className="bg-custom-gray text-white font-poppins">
+          {results.map((song) => (
+            <li className="flex items-center gap-x-6 p-7" key={song.name}>
+              <div className="w-full">
+                <img className="h-36 w-36 shadow-md shadow-black" src={song.cover} alt="" />
+              </div>
+              <div className="w-full">
+                <h4>{song.name}</h4>
+              </div>
+              <div className="w-full">
+                <h4>{song.artist}</h4>
+              </div>
+              <div className="w-full">
+                <h4>{song.year}</h4>
+              </div>
+              <div className="w-full">
+                <button className="text-custom-red border border-custom-red bg-transparent px-6 py-1">SELECT SONG</button>
+              </div>
+            </li>
+          ))}
+        </ul>}
+    </div>
+  );
+};
+
+export default SearchResults;
+```
+
+### Display Lyrics:
+Create a component to display lyrics. Use a library or custom logic to synchronize lyrics with the song progression.
+```javascript
+
+```
+
+### Integrate Music Video:
+Embed the music video alongside the lyrics using a video player or an API that provides embeddable video content.
+```javascript
+import React from 'react';
+
+const YouTubeEmbed = ({ videoId }) => {
+  return (
+    <div className="youtube-embed-container mx-auto max-w-4xl">
+      <iframe
+        className="w-full"
+        style={{ height: '500px' }}
+        src={`https://www.youtube.com/embed/jCOX8dT9q8M?si=FEdGbtf9x7KKWoU-`}
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+  );
+};
+
+export default YouTubeEmbed;
+```
+
+### Implement Responsive Design:
+Ensure your components and overall layout are responsive. Use media queries and Tailwind to adapt to different screen sizes.
+```css
+@media only screen and (max-width: 640px){
+    /* Hero */
+    .red-div,
+    .image-div {
+      height: 14rem;
+      width: 20rem;
+    }
+
+    .red-div {
+      margin-bottom: 80px;
+    }
+
+    .selected-song {
+      text-align: center;
+    }
+
+    .lyrics {
+      padding: 15px;
+      text-align: center;
+    }
+}
+```
+
+### Integrate APIs:
+Use music and lyrics APIs to fetch song information, lyrics, and video content.
+```javascript
+export async function GetSearchResult(searchQuery) {
+    
+    const api = `uODKK-hhq00en1ijK6sQrXwqsdmvOsyZnW4LV9EXv8WL90_H1kTa5mxBJAVZFaq5`;
+    const url = `https://genius-song-lyrics1.p.rapidapi.com/search/?q=${searchQuery}&per_page=20&page=1`;
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': api,
+            'X-RapidAPI-Host': 'genius-song-lyrics1.p.rapidapi.com'
+        }
+    };
+
+    let results = [];
+    try {
+        const response = await fetch(url, options);
+        const result = await response.json();
+        results = result.hits.map((res)=>{
+            return {
+                cover : res.result.header_image_url,
+                name : res.result.title,
+                artist : res.result.artist_names,
+                year : res.result.release_date_for_display
+            }
+        });
+
+    } catch (error) {
+        console.error(error);
+    }
+
+    return results;
+}
+```
+
+### Testing:
+Test the application thoroughly to ensure that search, lyrics display, video integration, and responsiveness work as expected.
 
 ## Contributors
 
