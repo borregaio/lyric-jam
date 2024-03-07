@@ -5,7 +5,7 @@ const YouTubeEmbed = ({ videoId }) => {
     <div className="youtube-embed-container mx-auto max-w-4xl">
       <iframe
         className="w-full"
-        style={{ height: '500px' }}
+        style={{ height: '260px' }}
         src={`https://www.youtube.com/embed/jCOX8dT9q8M?si=FEdGbtf9x7KKWoU-`}
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
