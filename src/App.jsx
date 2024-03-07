@@ -28,7 +28,7 @@ function App() {
     <React.Fragment>
       <Header />
       <Hero />
-      {showResults ? <SearchResults results={results}/> : <SearchButton searchShowResultsFunction={setShowResults} />}
+      {showResults ? <SearchResults results={results}/> : <SearchButton searchShowResultsFunction={()=>setShowResults(true)} />}
       <Facts />
       <About />
       <Footer />
