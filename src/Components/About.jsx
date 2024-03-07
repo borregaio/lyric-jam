@@ -10,10 +10,10 @@ export default function About() {
             </div>
 
             <div className='absolute top-16 sm:top-20 md:top-32 z-10 w-5/6 h-height2 sm:h-height0 md:h-96 flex-auto'>
-                <img src={abstractLetters} className='w-full h-full object-cover shadow-lg shadow-black'></img>
+                <img src={abstractLetters} className='w-full h-[75%] object-cover shadow-lg shadow-black'></img>
             </div>
 
-            <div className='absolute top-24 sm:top-36 md:top-48 bg-custom-gray shadow-lg shadow-black w-3/4 h-height2 sm:h-height0 md:h-96 z-20 flex-auto' >
+            <div className='absolute top-24 sm:top-36 md:top-48 bg-custom-gray shadow-lg shadow-black w-3/4 h-height3 sm:h-height0 md:h-96 z-20 flex-auto' >
                 <div className='font-poppins font-extrabold text-white p-8 pt-0 text-left text-2xl'>
                     <h2 className='mt-5 leading-relaxed'>ABOUT US</h2>
                 </div>
