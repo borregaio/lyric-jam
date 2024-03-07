@@ -12,10 +12,10 @@ const Hero = () => {
             <div className='grid xl:grid-cols-2 md:grid-cols-1 sm:grid-cols-1'>
                 <div>
                     <div className='red-div bg-custom-red shadow-md shadow-black relative mx-auto mt-10 md:mb-10'>
-                        <div className='image-div bg-black shadow-md shadow-black relative top-10 left-7'><YouTubeEmbed/></div>
+                        <div className='image-div bg-black shadow-md shadow-black relative top-10 left-7'><YouTubeEmbed /></div>
                     </div>
                 </div>
-                                <div
+                <div
                     data-aos="fade-up"
                     data-aos-delay="100"
                     data-aos-easing="ease-in-sine"
@@ -47,7 +47,6 @@ const Hero = () => {
                 </div>
             </div>
         </div>
-
     );
 };
 
