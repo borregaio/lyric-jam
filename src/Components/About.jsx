@@ -3,13 +3,9 @@ import abstractLetters from '../assets/images/02_abstract-letters.png';
 
 export default function About() {
     return (
-        <div className='flex justify-center h-headerHeight0 sm:h-headerHeight1 relative'>
+        <div className='flex justify-center h-height0 sm:h-height1 relative'>
 
-            <div className='absolute top-0 z-10 bg-custom-gray w-full h-16 flex justify-center items-center'>
-                <h1 className='font-poppins font-extrabold text-custom-red text-4xl sm:text-5xl'>LYRIC JAM</h1>
-            </div>
-
-            <div className='absolute w-full h-headerHeight0 sm:h-headerHeight1' >
+            <div className='absolute w-full h-height0 sm:h-height1' >
                 <img src={blackSmoke} className='w-full h-full object-cover' ></img>
             </div>
 
@@ -18,8 +14,8 @@ export default function About() {
             </div>
 
             <div className='absolute top-32 sm:top-52 bg-custom-gray shadow-lg shadow-black w-3/4 z-20 flex-auto' >
-                <div className='font-poppins font-extrabold px-4 sm:px-20 text-custom-pink text-left text-2xl md:text-4xl basis-4/12 flex-auto'>
-                    <h2 className='mt-5 leading-relaxed'><span className='text-white'>ABOUT</span> US</h2>
+                <div className='font-poppins font-extrabold px-4 sm:px-20 text-white text-left text-2xl md:text-4xl basis-4/12 flex-auto'>
+                    <h2 className='mt-5 leading-relaxed'>ABOUT US</h2>
                 </div>
                 <div className='text-white p-8 pt-0 text-justify'>
                     <p className='mt-3 mb-3'>Welcome to Lyric Jam, your ultimate destination for music enthusiasts!</p>

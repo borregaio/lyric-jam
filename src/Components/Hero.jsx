@@ -2,8 +2,6 @@
 import React from 'react';
 import YouTubeEmbed from './YouTubeEmbed';
 
-
-
 const Hero = ({videoData}) => {
     return (
         <div>
