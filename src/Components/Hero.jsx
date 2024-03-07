@@ -6,7 +6,8 @@ const Hero = ({videoData}) => {
     return (
         <div>
             <div className='selected-song font-poppins text-4xl font-extrabold xl:text-left mt-5 xl:ml-12 lg:text-center md:text-center sm:text-center'>
-                <h1>{videoData.artist}</h1>
+                <h1>{videoData.songName}</h1>
+                <h3 className='text-2xl'>{videoData.artist}</h3>
             </div>
 
             <div className='grid xl:grid-cols-2 md:grid-cols-1 sm:grid-cols-1'>
@@ -17,7 +18,7 @@ const Hero = ({videoData}) => {
                         </div>
                     </div>
                 </div>
-                <div dangerouslySetInnerHTML={{ __html: videoData.lyrics }} className='lyrics xl:p-10 lg:p-10 md:p-10 text-left lg:text-center md:text-center sm:p-20 sm:text-center'>
+                <div dangerouslySetInnerHTML={{ __html: videoData.lyrics }} className='lyrics  lg:p-10 md:p-10 text-left lg:text-center md:text-center sm:p-20 sm:text-center'>
                     
                     {/* <p>This ain't Texas (woo), ain't no hold 'em (hey)</p>
                     <p>So lay your cards down, down, down, down</p>

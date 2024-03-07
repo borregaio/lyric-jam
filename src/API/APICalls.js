@@ -1,6 +1,7 @@
+const api = `uODKK-hhq00en1ijK6sQrXwqsdmvOsyZnW4LV9EXv8WL90_H1kTa5mxBJAVZFaq5`;
+
 export async function GetSearchResult(searchQuery) {
     
-    const api = `uODKK-hhq00en1ijK6sQrXwqsdmvOsyZnW4LV9EXv8WL90_H1kTa5mxBJAVZFaq5`;
     const url = `https://genius-song-lyrics1.p.rapidapi.com/search/?q=${searchQuery}&per_page=20&page=1`;
     const options = {
         method: 'GET',
@@ -20,6 +21,7 @@ export async function GetSearchResult(searchQuery) {
                 cover: res.result.header_image_url,
                 name: res.result.title,
                 artist: res.result.artist_names,
+                songName : res.result.full_title,
                 year: res.result.release_date_for_display,
                 id: res.result.id
             }
@@ -38,7 +40,7 @@ export async function GetSongLyrics(songId) {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '200704b6c5mshb43ca1d1bafb8dap12a0fejsnf1364f2f2442',
+            'X-RapidAPI-Key': api,
             'X-RapidAPI-Host': 'genius-song-lyrics1.p.rapidapi.com'
         }
     };
