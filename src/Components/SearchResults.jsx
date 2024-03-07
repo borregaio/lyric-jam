@@ -1,6 +1,24 @@
-/* eslint-disable react/prop-types */
+import { GetSongDetails } from './../API/APICalls';
 
-const SearchResults = ({ results }) => {
+const SearchResults = ({ results, setSelectedSong, setResults }) => {
+
+  const handleClick = async (e, id) =>{
+    e.preventDefault();
+
+    const res = await GetSongDetails(id);
+
+    setSelectedSong(res);
+    setResults([]);
+    /* {
+      videoId : res.videoId,
+      description : res.description,
+      artist : res.artist,
+      songName : res.songName,
+      lyrics : res.lyrics,
+      artistDesc : res.artistDesc
+    } */
+  };
+
   return (
     <div>
       {results &&
@@ -20,7 +38,10 @@ const SearchResults = ({ results }) => {
                 <h4>{song.year}</h4>
               </div>
               <div className="w-full">
-                <button className="text-custom-red border border-custom-red bg-transparent px-6 py-1">SELECT SONG</button>
+                <button onClick={(e) => handleClick(e, song.id)} 
+                  className="text-custom-red border border-custom-red bg-transparent px-6 py-1">
+                  SELECT SONG
+                </button>
               </div>
             </li>
           ))}
