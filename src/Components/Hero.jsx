@@ -18,7 +18,11 @@ const Hero = ({videoData}) => {
                         </div>
                     </div>
                 </div>
-                <div dangerouslySetInnerHTML={{ __html: videoData.lyrics }} className='lyrics  lg:p-10 md:p-10 text-left lg:text-center md:text-center sm:p-20 sm:text-center'>
+                                <div
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                    data-aos-easing="ease-in-sine"
+                    dangerouslySetInnerHTML={{ __html: videoData.lyrics }} className='lyrics font-poppins xl: mt-10  lg:p-10 md:p-10 text-left lg:text-center md:text-center sm:p-20 sm:text-center shadow-black h-40 lg:h-72 overflow-hidden hover:overflow-auto'>
                     
                     {/* <p>This ain't Texas (woo), ain't no hold 'em (hey)</p>
                     <p>So lay your cards down, down, down, down</p>

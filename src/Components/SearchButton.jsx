@@ -1,5 +1,4 @@
 import React from 'react';
-// import { displayResults } from '../../script.js';
 
 const SearchButton = ({searchShowResultsFunction}) => {
     return (
