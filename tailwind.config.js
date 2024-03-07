@@ -20,6 +20,7 @@ export default {
       height: {
         'height0' : '550px',
         'height1' : '700px',
+        'height2' : '900px',
       }
     },
   },
