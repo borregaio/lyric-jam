@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import SearchButton from './SearchButton';
@@ -6,7 +6,7 @@ import blackSmoke from '../assets/images/02_black-smoke.png';
 import abstractLetters from '../assets/images/02_abstract-letters.png';
 
 
-const Header = () => {
+const Header = ({setResults}) => {
 
     useEffect(() => {
         AOS.init();
@@ -48,7 +48,9 @@ const Header = () => {
                         <h2 className='leading-relaxed'><span className='text-white'>VIEW</span> VIDEO / LYRICS / SONGS / FACTS</h2>
                     </div>
                     <div className='basis-2/12'></div>
-                    <div className='basis-1/12 flex justify-center items-center'><SearchButton /></div>
+                    <div className='basis-1/12 flex justify-center items-center'>
+                        <SearchButton setResults={setResults} />
+                    </div>
                     <div className='basis-2/12'></div>
                 </div>
             </div>

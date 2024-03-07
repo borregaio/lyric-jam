@@ -1,4 +1,3 @@
-import React from 'react';
 
 const YouTubeEmbed = ({ videoId }) => {
   return (
@@ -6,7 +5,7 @@ const YouTubeEmbed = ({ videoId }) => {
       <iframe
         className="w-full"
         style={{ height: '260px' }}
-        src={`https://www.youtube.com/embed/jCOX8dT9q8M?si=FEdGbtf9x7KKWoU-`}
+        src={`https://www.youtube.com/embed/${videoId}`}
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
