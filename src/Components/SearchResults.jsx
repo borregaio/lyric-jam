@@ -1,22 +1,18 @@
 import { GetSongDetails } from './../API/APICalls';
 
-const SearchResults = ({ results, setSelectedSong, setResults }) => {
+const SearchResults = ({ results, setSelectedSong, setResults, setShowLoad }) => {
 
   const handleClick = async (e, id) =>{
     e.preventDefault();
+
+    setShowLoad(true);
 
     const res = await GetSongDetails(id);
 
     setSelectedSong(res);
     setResults([]);
-    /* {
-      videoId : res.videoId,
-      description : res.description,
-      artist : res.artist,
-      songName : res.songName,
-      lyrics : res.lyrics,
-      artistDesc : res.artistDesc
-    } */
+    setShowLoad(false);
+    
   };
   // md:px-0 md:py-0 lg:px-60 lg:py-28
   return (

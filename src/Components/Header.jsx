@@ -6,7 +6,7 @@ import blackSmoke from '../assets/images/02_black-smoke.png';
 import abstractLetters from '../assets/images/02_abstract-letters.png';
 
 
-const Header = ({setResults}) => {
+const Header = ({setResults, setShowLoad}) => {
 
     useEffect(() => {
         AOS.init();
@@ -49,7 +49,7 @@ const Header = ({setResults}) => {
                     </div>
                     <div className='basis-2/12'></div>
                     <div className='basis-1/12 flex justify-center items-center'>
-                        <SearchButton setResults={setResults} />
+                        <SearchButton setResults={setResults} setShowLoad={setShowLoad}/>
                     </div>
                     <div className='basis-2/12'></div>
                 </div>
