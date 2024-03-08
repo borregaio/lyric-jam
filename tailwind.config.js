@@ -13,6 +13,7 @@ export default {
         'custom-red': '#F06767',
         'custom-pink': '#F08686',
         'custom-gray': '#303030',
+        'custom-lightGrey': '#dcdcdc',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],

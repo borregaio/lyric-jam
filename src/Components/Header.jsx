@@ -28,7 +28,7 @@ const Header = ({setResults}) => {
 
 
             {/* Background image two */}
-            <div data-aos="fade-left"
+            <div data-aos="fade-up"
                 data-aos-delay="100"
                 data-aos-easing="ease-in-sine"
                 className='absolute top-24 sm:top-36 z-10 w-5/6 h-96'>
@@ -36,7 +36,7 @@ const Header = ({setResults}) => {
             </div>
 
             {/* Container for instructions and search button */}
-            <div data-aos="fade-left"
+            <div data-aos="fade-up"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
                 className='absolute top-32 sm:top-52 bg-black shadow-lg shadow-black w-3/4 h-96 z-20' >
