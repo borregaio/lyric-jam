@@ -12,7 +12,7 @@ const Facts = ({details}) => {
         <div className='h-height0 bg-custom-lightGrey'>
             {/* Title */}
             <div className='font-poppins pt-12 lg:pt-20 pb-8 text-4xl font-extrabold text-center xl:text-left lg:ml-10'>
-                Facts
+                Song & Artist Facts
             </div>
 
             <div className='grid  xl:grid-cols-2 md:grid-cols-1 ml-10 mr-10 gap-y-4'>
