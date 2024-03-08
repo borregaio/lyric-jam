@@ -18,9 +18,10 @@ const SearchResults = ({ results, setSelectedSong, setResults }) => {
       artistDesc : res.artistDesc
     } */
   };
-
+  // md:px-0 md:py-0 lg:px-60 lg:py-28
   return (
-    <div>
+    <div className='bg-white flex justify-center lg:py-28'>
+    <div className='lg:w-3/4  shadow-lg shadow-black'>
       {results &&
         <ul role="list" className="bg-custom-gray text-white font-poppins">
           {results.map((song) => (
@@ -46,6 +47,7 @@ const SearchResults = ({ results, setSelectedSong, setResults }) => {
             </li>
           ))}
         </ul>}
+    </div>
     </div>
   );
 };
