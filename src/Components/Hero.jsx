@@ -4,14 +4,14 @@ import YouTubeEmbed from './YouTubeEmbed';
 
 const Hero = ({ videoData }) => {
     return (
-        <div>
-            <div className='selected-song font-poppins text-4xl font-extrabold xl:text-left mt-5 xl:ml-12 lg:text-center md:text-center sm:text-center'>
+        <div className='mb-12'>
+            <div className='selected-song font-poppins text-4xl font-extrabold xl:text-left mt-20 xl:ml-12 lg:text-center md:text-center sm:text-center'>
                 <h1>{videoData.songName}</h1>
                 <h3 className='text-2xl'>{videoData.artist}</h3>
             </div>
 
             <div className='grid xl:grid-cols-2 md:grid-cols-1 sm:grid-cols-1'>
-                <div>
+                <div className='mb-12 sm:md-20 md:mb-12'>
                     <div className='red-div bg-custom-red shadow-md shadow-black relative mx-auto mt-10 md:mb-10'>
                         <div className='image-div bg-black shadow-md shadow-black relative top-10 left-7'>
                             <YouTubeEmbed videoId={videoData.videoId} />
