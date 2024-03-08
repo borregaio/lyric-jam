@@ -7,6 +7,7 @@ import About from './Components/About.jsx';
 import SearchResults from './Components/SearchResults.jsx';
 import Facts from './Components/Facts.jsx';
 import Footer from './Components/Footer.jsx';
+import LoadOverlay from './Components/LoadOverlay.jsx';
 
 const videoDataDefault ={
   videoId : 'zABLecsR5UE?si=kHrJimQxjlL3Z848',
@@ -20,20 +21,23 @@ const videoDataDefault ={
 function App() {
   const[results, setResults] = useState([]);
   const[selectedSong, setSelectedSong] = useState(videoDataDefault);
+  const[showLoad, setShowLoad] = useState(false);
 
   return (
     <React.Fragment>
-      <Header setResults={setResults} />
+       {showLoad && <LoadOverlay /> }
+      <Header setResults={setResults} setShowLoad={setShowLoad}/>
       
       {results.length == 0 
         ? 
-        <><Hero videoData={selectedSong}/><Facts details={selectedSong}/></> 
+        <><Hero videoData={selectedSong} /><Facts details={selectedSong} /></> 
         :
-        <SearchResults results={results} setSelectedSong={setSelectedSong} setResults={setResults}/> 
+        <SearchResults results={results} setSelectedSong={setSelectedSong} setResults={setResults} setShowLoad={setShowLoad}/> 
       }
       
       <About />
       <Footer />
+     
     </React.Fragment>
   );
 }

@@ -1,15 +1,19 @@
 import { useState } from 'react';
 import { GetSearchResult } from './../API/APICalls';
 
-const SearchButton = ({ setResults }) => {
+const SearchButton = ({ setResults, setShowLoad }) => {
     const [userSearchInput, setUserSearchInput] = useState('');
 
     const loadResults = async (e) => {
         e.preventDefault();
 
+        setShowLoad(true);
+
         const res = await GetSearchResult(userSearchInput);
         setResults(res);
         setUserSearchInput('');
+
+        setShowLoad(false);
     };
 
     const handleChange = (e) =>{
