@@ -17,7 +17,7 @@ const Facts = ({details}) => {
 
             <div className='grid  xl:grid-cols-2 md:grid-cols-1 ml-10 mr-10 gap-y-4'>
                 {/* Facts about song */}
-                <div className='font-poppins lg:py-8 lg:pr-8 text-left text-sm sm:text-base h-40 xl:h-height1 overflow-hidden hover:overflow-auto'>
+                <div className='font-poppins lg:py-8 lg:pr-8 text-left text-sm sm:text-base h-40 xl:h-72 overflow-hidden hover:overflow-auto'>
                     <p>
                         {details.description}
                     </p>
